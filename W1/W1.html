@@ -101,9 +101,10 @@
                         1. 可靠性   <!-- .element: class="fragment" data-fragment-index="1" -->
                             - 丢包处理  <!-- .element: class="fragment" data-fragment-index="2" -->
                             - 数据有序性  <!-- .element: class="fragment" data-fragment-index="3" -->
-                        
-                        2. 效率 <!-- .element: class="fragment" data-fragment-index="4" -->
-                            - UDP高 <!-- .element: class="fragment" data-fragment-index="5" -->
+                            - 可靠的连接   <!-- .element: class="fragment" data-fragment-index="4" -->
+                            - ......    <!-- .element: class="fragment" data-fragment-index="5" -->
+                        2. 效率 <!-- .element: class="fragment" data-fragment-index="6" -->
+                            - UDP高 <!-- .element: class="fragment" data-fragment-index="7" -->
 
                         --
 
@@ -139,7 +140,7 @@
 
                         --
 
-                        `curl -I www.baidu.com`
+                        `curl -I http://www.baidu.com`
 
                         --
 
@@ -160,7 +161,7 @@
 
                         --
 
-                        - 支持并行下载
+                        - 支持并行发送请求
 
                             客户端可以不等待前一个请求返回，直接发送下一个请求；但服务器返回响应仍需要有序，保证前一个响应传输完才能传输下一个。
 
@@ -168,7 +169,7 @@
 
                             ![image-20220420081454084](w1.assets/image-20220420081454084.png)
 
-                            服务器将资源分布在多个域名下，chrome允许建立多个TCP连接，实现真正的并行下载
+                            服务器将资源分布在多个域名下，chrome允许建立多个TCP连接，实现并行下载
 
                         --
 
